@@ -1,0 +1,64 @@
+nav a{
+  text-align: center;
+  color:#FFFFFF;
+  background: #0000FF;
+  display: inline-block;
+  width: 20%;
+  margin-right: 2%;
+}
+
+.current{
+  color: #000000;
+  background: #0FFF00;
+  text-transform: uppercase;
+}
+
+/* --- TAREA 2: SELECTORES AVANZADOS Y VISUALIZACIÓN --- */
+
+/* 1. Elemento nav usando inline-block y ancho de aproximadamente 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* 2. Selector descendente: dar estilo solo a la imagen dentro de nav (ancho 10%) */
+nav img {
+    width: 10%;
+}
+
+/* 3. Clase grid usando rejilla de dos columnas, cada una al 40% y centradas */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* 4. Selector descendente: dar estilo solo a las imágenes dentro de la clase grid (ancho 100%) */
+.grid img {
+    width: 100%;
+}
+
+/* 5. Clase flex usando flexbox y distribución de contenido */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 6. Estilo opcional para la clase de accesibilidad "Saltar al contenido" */
+.saltar-contenido {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #00274c;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+.saltar-contenido:focus {
+    top: 0; /* Aparece solo cuando se presiona la tecla Tab */
+}
+
+
